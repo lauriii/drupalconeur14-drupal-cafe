@@ -66,10 +66,32 @@ td, th {
   padding: 5px 15px !important;
 }
 
-.no {
+.no, .reveal .slides section .fragment.highlight-red.visible {
+  position: relative;
   color: #FF4747 !important;
 }
 
-.yes {
+.reveal .slides section .fragment.highlight-red.visible span:after {
+  content: '';
+  border-bottom: 5px solid #FF4747;
+  position: absolute;
+  left: 0;
+  top: 45%;
+  width: 90%;
+  margin-left: 5%;
+}
+
+.yes, .reveal .slides section .fragment.highlight-green.visible {
   color: #85FF85 !important;
 }
+
+.twitter img, .twitter h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.twitter h2 {
+  margin: 0 30px;
+}
+
+
